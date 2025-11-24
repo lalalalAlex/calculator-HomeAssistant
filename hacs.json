@@ -1,0 +1,11 @@
+{
+    "name": "Calculator",
+    "domain": "calculator",
+    "homeassistant": "2024.3.3",
+    "render_readme": true,
+    "country": "UZ",
+    "documentation": "https://github.com/lalalalALex/homeassistant-calculator/wiki",
+    "issue_tracker": "https://github.com/lalalalALex/homeassistant-calculator/issues",
+    "codeowners": ["@lalalalALex"],
+    "requirements": []
+}

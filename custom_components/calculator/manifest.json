@@ -1,0 +1,10 @@
+{
+    "domain": "calculator",
+    "name": "Calculator",
+    "version": "1.0.0",
+    "config_flow": false,
+    "requirements": [],
+    "codeowners": ["@lavalex2003"],
+    "iot_class": "cloud_polling",
+    "integration_type": "hub"
+}
