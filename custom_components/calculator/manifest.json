@@ -1,10 +1,12 @@
 {
-    "domain": "calculator",
-    "name": "Calculator",
-    "version": "1.0.0",
-    "config_flow": false,
-    "requirements": [],
-    "codeowners": ["@lavalex2003"],
-    "iot_class": "cloud_polling",
-    "integration_type": "hub"
+  "domain": "calculator",
+  "name": "Calculator",
+  "codeowners": ["@lalalalAlex"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/lalalalAlex/calculator-HomeAssistant.git",
+  "integration_type": "helper",
+  "iot_class": "local_polling",
+  "requirements": [],
+  "version": "1.0.0"
 }
