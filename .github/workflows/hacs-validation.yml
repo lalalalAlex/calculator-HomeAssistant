@@ -1,0 +1,29 @@
+name: Validate HACS Integration
+
+on: 
+  push:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Validate HACS manifest
+        run: |
+          if jq -e . < custom_components/calculator/manifest.json > /dev/null 2>&1; then
+            echo "manifest.json is valid"
+          else
+            echo "Invalid manifest.json"
+            exit 1
+          fi
+      - name: Validate HACS configuration
+        run: |
+          if jq -e . < hacs.json > /dev/null 2>&1; then
+            echo "hacs.json is valid"
+          else
+            echo "Invalid hacs.json"
+            exit 1
+          fi
